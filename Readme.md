@@ -31,7 +31,7 @@
 
 # Running Service
 > <p>systemctl restart unbound
-  <p>systemctl enable csf
-  <p>systemctl enable lfd
-  <p>systemctl restart csf
-  <p>systemctl restart lfd
+> <p>systemctl enable csf
+> <p>systemctl enable lfd
+> <p>systemctl restart csf
+> <p>systemctl restart lfd
