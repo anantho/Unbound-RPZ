@@ -29,9 +29,12 @@
 # Test CSF fuction
 > <p>perl /usr/local/csf/bin/csftest.pl
 
-# Running Service
+# Run Service
 > <p>systemctl restart unbound
 > <p>systemctl enable csf
 > <p>systemctl enable lfd
 > <p>systemctl restart csf
 > <p>systemctl restart lfd
+
+# NOTE
+<p>don't forget to put ip whitelist at /etc/csf/csf.ignore
