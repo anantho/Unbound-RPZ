@@ -7,6 +7,7 @@ apt install unbound python-unbound ca-certificates dnsutils
 mkdir -p /etc/unbound/zones
 
 # crontab schedule
-@weekly /usr/local/bin/update_named.sh #update root.hints
-
-@weekly /usr/local/bin/ads-block.sh #update ads/rpz blocking list
+update root.hints
+- @weekly /usr/local/bin/update_named.sh
+update ads/rpz blocking list
+- @weekly /usr/local/bin/ads-block.sh
