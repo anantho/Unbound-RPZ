@@ -28,3 +28,6 @@ apt install iptables-persistent ipset-persistent curl
 # Installing CSF
 - cd /opt/csf 
 - sh install.sh 
+
+# Test CSF fuction
+> perl /usr/local/csf/bin/csftest.pl
