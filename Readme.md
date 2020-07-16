@@ -4,28 +4,34 @@
 > <p>apt install unbound python-unbound ca-certificates dnsutils
 
 # create zones directory
-> mkdir -p /etc/unbound/zones
+> <p>mkdir -p /etc/unbound/zones
 
 # crontab schedule
 > <p>@weekly /usr/local/bin/update_named.sh #update root.hints</b>
 > <p>@weekly /usr/local/bin/ads-block.sh #update ads/rpz blocking list
 
 # Installing IPTables-persistent and IPSet-persistent
-> apt install iptables-persistent ipset-persistent curl
+> <p>apt install iptables-persistent ipset-persistent curl
 
 # Move to IPTables-Legacy
-> update-alternatives --set iptables /usr/sbin/iptables-legacy 
-
-> update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 
+> <p>update-alternatives --set iptables /usr/sbin/iptables-legacy 
+> <p>update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 
 
 # Download CSF Firewall
-> cd /opt/ 
-> wget http://download.configserver.com/csf.tgz 
-> tar xzf csf.tgz 
+> <p>cd /opt/ 
+> <p>wget http://download.configserver.com/csf.tgz 
+> <p>tar xzf csf.tgz 
 
 # Installing CSF
-> cd /opt/csf 
-> sh install.sh 
+> <p>cd /opt/csf 
+> <p>sh install.sh 
 
 # Test CSF fuction
-> perl /usr/local/csf/bin/csftest.pl
+> <p>perl /usr/local/csf/bin/csftest.pl
+
+# Running Service
+> <p>systemctl restart unbound
+  <p>systemctl enable csf
+  <p>systemctl enable lfd
+  <p>systemctl restart csf
+  <p>systemctl restart lfd
