@@ -37,4 +37,4 @@
 > <p>systemctl restart lfd
 
 # NOTE
-<p>don't forget to put ip whitelist at /etc/csf/csf.ignore
+<p>don't forget to put whitelist IP Address at /etc/csf/csf.ignore
