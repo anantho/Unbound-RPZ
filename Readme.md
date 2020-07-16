@@ -21,10 +21,10 @@ apt install iptables-persistent ipset-persistent curl
 - update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 
 # Download CSF Firewall
-cd /opt/ 
-wget http://download.configserver.com/csf.tgz 
-tar xzf csf.tgz 
+- cd /opt/ 
+- wget http://download.configserver.com/csf.tgz 
+- tar xzf csf.tgz 
 
 # Installing CSF
-cd /opt/csf 
-sh install.sh 
+- cd /opt/csf 
+- sh install.sh 
