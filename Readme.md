@@ -7,8 +7,7 @@
 > mkdir -p /etc/unbound/zones
 
 # crontab schedule
-> @weekly /usr/local/bin/update_named.sh #update root.hints
-
+> @weekly /usr/local/bin/update_named.sh #update root.hints</b>
 > @weekly /usr/local/bin/ads-block.sh #update ads/rpz blocking list
 
 # Installing IPTables-persistent and IPSet-persistent
