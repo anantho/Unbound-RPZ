@@ -16,8 +16,8 @@
 > apt install iptables-persistent ipset-persistent curl
 
 # Move to IPTables-Legacy
-> update-alternatives --set iptables /usr/sbin/iptables-legacy
-> update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+> update-alternatives --set iptables /usr/sbin/iptables-legacy 
+> update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 
 
 # Download CSF Firewall
 > cd /opt/ 
