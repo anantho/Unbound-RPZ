@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 rm /tmp/hosts*
 rm /tmp/ads.conf*
