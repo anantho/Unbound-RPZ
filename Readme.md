@@ -8,8 +8,8 @@
   
 # download/copy paste and change permission script
 > <p>wget https://raw.githubusercontent.com/anantho/Unbound-RPZ-CSF/master/usr/local/bin/ads_block.sh -O /usr/local/bin/ads_block.sh
-> <p>wget https://github.com/anantho/Unbound-RPZ-CSF/blob/master/usr/local/bin/porn_block.sh -O /usr/local/bin/porn_block.sh
-> <p>wget https://github.com/anantho/Unbound-RPZ-CSF/blob/master/usr/local/bin/update_named.sh -O /usr/local/bin/update_named.sh
+> <p>wget https://raw.githubusercontent.com/anantho/Unbound-RPZ-CSF/master/usr/local/bin/porn_block.sh -O /usr/local/bin/porn_block.sh
+> <p>wget https://raw.githubusercontent.com/anantho/Unbound-RPZ-CSF/master/usr/local/bin/update_named.sh -O /usr/local/bin/update_named.sh
 > <p>chmod +x /usr/local/bin/ads_block.s
 > <p>chmod +x /usr/local/bin/porn_block.sh
 > <p>chmod +x /usr/local/bin/update_named.sh
