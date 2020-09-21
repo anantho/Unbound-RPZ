@@ -5,10 +5,19 @@
 
 # create zones directory
 > <p>mkdir -p /etc/unbound/zones
+  
+# download/copy paste and change permission script
+> <p>wget https://raw.githubusercontent.com/anantho/Unbound-RPZ-CSF/master/usr/local/bin/ads_block.sh -O /usr/local/bin/ads_block.sh
+> <p>wget https://github.com/anantho/Unbound-RPZ-CSF/blob/master/usr/local/bin/porn_block.sh -O /usr/local/bin/porn_block.sh
+> <p>wget https://github.com/anantho/Unbound-RPZ-CSF/blob/master/usr/local/bin/update_named.sh -O /usr/local/bin/update_named.sh
+> <p>chmod +x /usr/local/bin/ads_block.s
+> <p>chmod +x /usr/local/bin/porn_block.sh
+> <p>chmod +x /usr/local/bin/update_named.sh
 
 # crontab schedule
 > <p>@monthly /usr/local/bin/update_named.sh #update root.hints</b>
-> <p>@weekly /usr/local/bin/ads-block.sh #update ads/rpz blocking list
+> <p>@weekly /usr/local/bin/ads-block.sh #update ads & malware rpz blocking list
+> <p>@weekly /usr/local/bin/porn-block.sh #update porn rpz blocking list
 
 # Installing IPTables-persistent and IPSet-persistent
 > <p>apt install iptables-persistent ipset-persistent curl
